@@ -58,3 +58,6 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# Ignore *.received.* files from AprovalTests
+*.received.*
