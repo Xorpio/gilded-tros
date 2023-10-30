@@ -38,6 +38,8 @@ namespace GildedTros.App
                 Console.WriteLine("");
                 app.UpdateQuality();
             }
+
+            Console.WriteLine("Finished program");
         }
     }
 }
