@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using ApprovalTests;
 using ApprovalTests.Reporters;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace GildedTros.App.Test
 {
