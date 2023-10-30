@@ -8,7 +8,7 @@ public class ItemTest
         //arrange
         var Items = new Item[]
         {
-            new() {Name = "Duplicate Code", SellIn = 3, Quality = 6}
+            new() { Name = "Duplicate Code", SellIn = 3, Quality = 6 }
         };
 
         var app = new GildedTros(Items);
@@ -26,7 +26,7 @@ public class ItemTest
         //arrange
         var Items = new Item[]
         {
-            new() {Name = "Long Methods", SellIn = 3, Quality = 6}
+            new() { Name = "Long Methods", SellIn = 3, Quality = 6 }
         };
 
         var app = new GildedTros(Items);
@@ -44,7 +44,7 @@ public class ItemTest
         //arrange
         var Items = new Item[]
         {
-            new() {Name = "Duplicate Code", SellIn = 0, Quality = 6}
+            new() { Name = "Duplicate Code", SellIn = 0, Quality = 6 }
         };
 
         var app = new GildedTros(Items);
@@ -62,7 +62,7 @@ public class ItemTest
         //arrange
         var Items = new Item[]
         {
-            new() {Name = "Ugly Variable Names", SellIn = 3, Quality = 6}
+            new() { Name = "Ugly Variable Names", SellIn = 3, Quality = 6 }
         };
 
         var app = new GildedTros(Items);
