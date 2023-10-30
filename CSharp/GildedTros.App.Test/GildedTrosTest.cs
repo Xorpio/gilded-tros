@@ -7,7 +7,7 @@ public class GildedTrosTest
     {
         IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
         GildedTros app = new GildedTros(Items);
-        app.UpdateQuality();
+        app.UpdateQualityForItems();
         Items[0].Name.Should().Be("foo");
     }
 }

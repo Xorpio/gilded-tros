@@ -84,7 +84,7 @@ public class GildedTros
         }
     }
 
-    public void UpdateQuality()
+    public void UpdateQualityForItems()
     {
         foreach (var item in Items)
         {

@@ -14,7 +14,7 @@ public class ItemTest
         var app = new GildedTros(Items);
 
         //act
-        app.UpdateQuality();
+        app.UpdateQualityForItems();
 
         //assert
         app.Items[0].Quality.Should().Be(4);
@@ -32,7 +32,7 @@ public class ItemTest
         var app = new GildedTros(Items);
 
         //act
-        app.UpdateQuality();
+        app.UpdateQualityForItems();
 
         //assert
         app.Items[0].Quality.Should().Be(4);
@@ -50,7 +50,7 @@ public class ItemTest
         var app = new GildedTros(Items);
 
         //act
-        app.UpdateQuality();
+        app.UpdateQualityForItems();
 
         //assert
         app.Items[0].Quality.Should().Be(2);
@@ -68,7 +68,7 @@ public class ItemTest
         var app = new GildedTros(Items);
 
         //act
-        app.UpdateQuality();
+        app.UpdateQualityForItems();
 
         //assert
         app.Items[0].Quality.Should().Be(4);
