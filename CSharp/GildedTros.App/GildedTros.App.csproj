@@ -4,6 +4,9 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <StartupObject>GildedTros.App.Program</StartupObject>
+    <ImplicitUsings>true</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>GildedTros.App</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
