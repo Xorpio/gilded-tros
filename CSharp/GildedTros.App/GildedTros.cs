@@ -101,6 +101,7 @@ public class GildedTros
                     updateBDAWGKeychain(item);
                     break;
                 case "Duplicate Code":
+                case "Long Methods":
                     updateSmellyItem(item);
                     break;
                 default:
