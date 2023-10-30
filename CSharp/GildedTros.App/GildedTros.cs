@@ -100,6 +100,9 @@ public class GildedTros
                 case "B-DAWG Keychain":
                     updateBDAWGKeychain(item);
                     break;
+                case "Duplicate Code":
+                    updateSmellyItem(item);
+                    break;
                 default:
                     updateDefaultItem(item);
                     break;
@@ -107,4 +110,23 @@ public class GildedTros
         }
     }
 
+    private void updateSmellyItem(Item item)
+    {
+        item.SellIn--;
+
+        // quality degrades every day
+        item.Quality = item.Quality - 2;
+
+        // quality degrades twice as fast after the sellin date
+        if (item.SellIn < 0)
+        {
+            item.Quality--;
+        }
+
+        // quality can never be negative
+        if (item.Quality < 0)
+        {
+            item.Quality = 0;
+        }
+    }
 }
