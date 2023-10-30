@@ -3,6 +3,10 @@
 
 name: .NET
 
+defaults:
+  run:
+    working-directory: CSharp
+
 on:
   push:
     branches: [ "main" ]
