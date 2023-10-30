@@ -102,6 +102,7 @@ public class GildedTros
                     break;
                 case "Duplicate Code":
                 case "Long Methods":
+                case "Ugly Variable Names":
                     updateSmellyItem(item);
                     break;
                 default:
