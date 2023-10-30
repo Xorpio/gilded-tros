@@ -55,4 +55,22 @@ public class ItemTest
         //assert
         app.Items[0].Quality.Should().Be(2);
     }
+
+    [Fact(DisplayName = "Test `Ugly Variable Names` after one day")]
+    public void UglyVariableNamesAfterOneDay()
+    {
+        //arrange
+        var Items = new Item[]
+        {
+            new() {Name = "Ugly Variable Names", SellIn = 3, Quality = 6}
+        };
+
+        var app = new GildedTros(Items);
+
+        //act
+        app.UpdateQuality();
+
+        //assert
+        app.Items[0].Quality.Should().Be(4);
+    }
 }
