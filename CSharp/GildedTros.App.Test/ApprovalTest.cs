@@ -2,22 +2,21 @@
 using ApprovalTests;
 using ApprovalTests.Reporters;
 
-namespace GildedTros.App.Test
+namespace GildedTros.App.Test;
+
+[UseReporter(typeof(DiffReporter))]
+public class ApprovalTest
 {
-    [UseReporter(typeof(DiffReporter))]
-    public class ApprovalTest
+    [Fact]
+    public void ThirtyDays()
     {
-        [Fact]
-        public void ThirtyDays()
-        {
-            var fakeoutput = new StringBuilder();
-            Console.SetOut(new StringWriter(fakeoutput));
-            Console.SetIn(new StringReader("a\n"));
+        var fakeoutput = new StringBuilder();
+        Console.SetOut(new StringWriter(fakeoutput));
+        Console.SetIn(new StringReader("a\n"));
 
-            Program.Main(new string[] { });
-            var output = fakeoutput.ToString();
+        Program.Main(new string[] { });
+        var output = fakeoutput.ToString();
 
-            Approvals.Verify(output);
-        }
+        Approvals.Verify(output);
     }
 }
