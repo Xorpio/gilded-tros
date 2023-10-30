@@ -120,7 +120,7 @@ public class GildedTros
         // quality degrades twice as fast after the sellin date
         if (item.SellIn < 0)
         {
-            item.Quality--;
+            item.Quality = item.Quality - 2;
         }
 
         // quality can never be negative
