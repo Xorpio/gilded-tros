@@ -2,7 +2,7 @@
 
 public class GildedTros
 {
-    IList<Item> Items;
+    public IList<Item> Items { get; }
     public GildedTros(IList<Item> Items)
     {
         this.Items = Items;

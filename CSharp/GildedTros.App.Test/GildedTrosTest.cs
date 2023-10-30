@@ -1,6 +1,4 @@
-﻿using FluentAssertions;
-
-namespace GildedTros.App.Test;
+﻿namespace GildedTros.App.Test;
 
 public class GildedTrosTest
 {
